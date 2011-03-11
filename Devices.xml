@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<device>
+  <name>
+    Rocker Switch, 2 Rocker
+  </name>
+  <description>
+    Light and blind control with 2 state
+  </description>
+  <attributes>
+    <attribute readOnly="true">
+      <name>
+        State
+      </name>
+      <description>
+        Represents the rocker state
+      </description>
+      <values type="onoff" />
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        Value
+      </name>
+      <description>
+        Represents the rocker value
+      </description>
+      <values type="onoff" />
+    </attribute>
+    		<attribute readOnly="true">
+			<name>EventType</name>
+			<description>
+				This attribute represents if the sensor throws events
+				periodically (period) or on external event (event).
+			</description>
+			<values type="string">
+				<value>period</value>
+				<value>event</value>
+			</values>
+		</attribute>
+  </attributes>
+</device>
+
+<device>
+  <name>
+    Rocker Switch, 4 Rocker
+  </name>
+  <description>
+    Blind control with 4 state
+  </description>
+  <attributes>
+    <attribute readOnly="true">
+      <name>
+        State
+      </name>
+      <description>
+        Represents the rocker state
+      </description>
+      <values type="onoff" />
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        Value
+      </name>
+      <description>
+        Represents the rocker value state
+      </description>
+      <values type="numeric" />
+    </attribute>
+    		<attribute readOnly="true">
+			<name>EventType</name>
+			<description>
+				This attribute represents if the sensor throws events
+				periodically (period) or on external event (event).
+			</description>
+			<values type="string">
+				<value>period</value>
+				<value>event</value>
+			</values>
+		</attribute>
+  </attributes>
+</device>
+
+<device>
+  <name>
+    Position Switch
+  </name>
+  <description>
+    Button encoder multi-choice
+  </description>
+  <attributes>
+    <attribute readOnly="true">
+      <name>
+        State
+      </name>
+      <description>
+        Represents the button current state
+      </description>
+      <values type="onoff" />
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        Position
+      </name>
+      <description>
+        Represents the postion of the button
+      </description>
+      <values type="numeric" />
+    </attribute>
+    		<attribute readOnly="true">
+			<name>EventType</name>
+			<description>
+				This attribute represents if the sensor throws events
+				periodically (period) or on external event (event).
+			</description>
+			<values type="string">
+				<value>period</value>
+				<value>event</value>
+			</values>
+		</attribute>
+  </attributes>
+</device>
+
+<device>
+  <name>
+    Mechanical Handle
+  </name>
+  <description>
+    Mechanical handle
+  </description>
+  <attributes>
+    <attribute readOnly="true">
+      <name>
+        State
+      </name>
+      <description>
+        Represents the handle current state
+      </description>
+      <values type="onoff" />
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        value
+      </name>
+      <description>
+        Represents the postion of the handle :
+        0 : Closed - handle down
+        1 : Closed - handle up
+        2 : Opened clockwise
+        3 : Opened counter-clockwise
+      </description>
+      <values type="numeric" />
+    </attribute>
+    <attribute readOnly="true">
+			<name>EventType</name>
+			<description>
+				This attribute represents if the sensor throws events
+				periodically (period) or on external event (event).
+			</description>
+			<values type="string">
+				<value>period</value>
+				<value>event</value>
+			</values>
+		</attribute>
+  </attributes>
+</device>
+
+<device>
+  <name>
+    Window Contact
+  </name>
+  <description>
+    Information on the status of a window (Open/Closed)
+  </description>
+  <attributes>
+    <attribute readOnly="true">
+      <name>
+        State
+      </name>
+      <description>
+        Represents the contact current state
+      </description>
+      <values type="onoff" />
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        value
+      </name>
+      <description>
+        Represents the postion of the windows (Open/Closed)
+      </description>
+      <values type="onoff" />
+    </attribute>
+        <attribute readOnly="true">
+			<name>EventType</name>
+			<description>
+				This attribute represents if the sensor throws events
+				periodically (period) or on external event (event).
+			</description>
+			<values type="string">
+				<value>period</value>
+				<value>event</value>
+			</values>
+		</attribute>
+  </attributes>
+</device>
+
+<device>
+  <name>
+    Temperature sensor
+  </name>
+  <description>
+    This device measures the temperature in a room.     
+  </description>
+  <attributes>
+    <attribute readOnly="true">
+      <name>
+        State
+      </name>    
+      <description>
+        Represents the sensor current state
+      </description>
+      <values type="onoff" />
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        value
+      </name>
+      <description>
+        Represents the value of temperature
+      </description>
+      <values type="numeric" />
+    </attribute>               
+    <attribute readOnly="true">
+			<name>Unit</name>
+			<description>
+				This attribute represents the temperature measuring unit.
+				It is the abbreviation of the UnitName.
+			</description>
+			<values type="string">
+				<value>C</value>
+			</values>
+		</attribute>
+    <attribute readOnly="true">
+			<name>EventType</name>
+			<description>
+				This attribute represents if the sensor throws events
+				periodically (period) or on external event (event).
+			</description>
+			<values type="string">
+				<value>period</value>
+				<value>event</value>
+			</values>
+		</attribute>
+  </attributes>
+</device>
+
+<device>
+  <name>
+    Temperature and Humidity Sensor  
+  </name>
+  <description>
+    This device measures the temperature and the humidity in a room.        
+  </description>
+  <attributes>
+    <attribute readOnly="true">
+      <name>
+        State
+      </name>
+      <description>
+        Represents the sensor current state
+      </description>
+      <values type="onoff" />
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        valueTemperature
+      </name>
+      <description>
+        Represents the temperature in the room.
+      </description>
+      <values type="numeric" />
+    </attribute>
+        <attribute readOnly="true">
+			<name>UnitTemperature</name>
+			<description>
+				This attribute represents the temperature measuring unit.
+				It is the abbreviation of the UnitName.
+			</description>
+			<values type="string">
+				<value>C</value>
+			</values>
+		</attribute>
+		<attribute readOnly="true">
+		Represents the temperature in the room.
+		  <name>
+        valueHumidity
+      </name>
+      <description>
+        Represents the humidity in the room.
+      </description>
+      <values type="numeric" />
+    </attribute>
+		<attribute readOnly="true">
+			<name>UnitHumidity</name>
+			<description>
+				This attribute represents the humidity measuring unit.
+				It is the abbreviation of the UnitName.
+			</description>
+			<values type="string">
+				<value>%</value>
+			</values>
+		</attribute>
+    <attribute readOnly="true">
+			<name>EventType</name>
+			<description>
+				This attribute represents if the sensor throws events
+				periodically (period) or on external event (event).
+			</description>
+			<values type="string">
+				<value>period</value>
+				<value>event</value>
+			</values>
+		</attribute>    
+  </attributes>
+</device>
+
+<device>
+  <name>
+    Light Sensor
+  </name>
+  <description>
+     this devices measures the light intensity in the room 
+  </description>
+  <attributes>
+    <attribute readOnly="true">
+      <name>
+        State
+      </name>
+      <description>
+        Represents the sensor current state
+      </description>
+      <values type="onoff" />
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        value
+      </name>
+      <description>
+        Represents the light intensity
+      </description>
+      <values type="numeric" />
+    </attribute>
+    <attribute readOnly="true">
+    <name>Unit</name>
+			<description>
+				This attribute represents the light intensity measuring unit.
+				It is the abreviation of the UnitName.
+			</description>
+			<values type="string">
+				<value>lx</value>
+			</values>
+    </attribute>
+    <attribute readOnly="true">
+			<name>EventType</name>
+			<description>
+				This attribute represents if the sensor throws events
+				periodically (period) or on external event (event).
+			</description>
+			<values type="string">
+				<value>period</value>
+				<value>event</value>
+			</values>
+		</attribute>
+  </attributes>
+</device>
+
+<device>
+  <name>
+    Occupancy Sensor
+  </name>
+  <description>
+    This device detect the presence of a person in the room    
+  </description>
+  <attributes>
+    <attribute readOnly="true">
+      <name>
+        State
+      </name>
+      <description>
+        Represents the sensor current state
+      </description>
+      <values type="onoff" />
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        value
+      </name>
+      <description>
+        Presence or not
+      </description>
+      <values type="onoff" />
+    </attribute>
+    <attribute readOnly="true">
+			<name>EventType</name>
+			<description>
+				This attribute represents if the sensor throws events
+				periodically (period) or on external event (event).
+			</description>
+			<values type="string">
+				<value>period</value>
+				<value>event</value>
+			</values>
+		</attribute>
+  </attributes>
+</device>
+
+
+<device>
+  <name>
+    Light, Temperature and Occupancy Sensor
+  </name>
+  <description>
+    This device measure the light intensity and the temperature of the piece and detect the presence of a person in the room      
+  </description>
+  <attributes>
+    <attribute readOnly="true">
+      <name>
+        State
+      </name>
+      <description>
+        Represents the sensor current state
+      </description>
+      <values type="onoff" />
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        valueTemperature
+      </name>
+      <description>
+        Represents the temperature in the room.
+      </description>
+      <values type="numeric" />
+    </attribute>
+        <attribute readOnly="true">
+			<name>UnitTemperature</name>
+			<description>
+				This attribute represents the temperature measuring unit.
+				It is the abbreviation of the UnitName.
+			</description>
+			<values type="string">
+				<value>C</value>
+			</values>
+		</attribute>
+    <attribute readOnly="true">
+      <name>
+        valueIntensity
+      </name>
+      <description>
+        Represents the light intensity
+      </description>
+      <values type="numeric" />
+    </attribute>
+    <attribute readOnly="true">
+    <name>UnitIntensity</name>
+			<description>
+				This attribute represents the light intensity measuring unit.
+				It is the abreviation of the UnitName.
+			</description>
+			<values type="string">
+				<value>lx</value>
+			</values>
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        valueOccupancy
+      </name>
+      <description>
+        Presence or not
+      </description>
+      <values type="onoff" />
+    </attribute>
+    <attribute readOnly="true">
+			<name>EventType</name>
+			<description>
+				This attribute represents if the sensor throws events
+				periodically (period) or on external event (event).
+			</description>
+			<values type="string">
+				<value>period</value>
+				<value>event</value>
+			</values>
+		</attribute>
+  </attributes>
+</device>
+
+<device>
+  <name>
+    Room Operating Panel
+  </name>
+  <description>
+    It is a set of sensors embedded in the same device   
+  </description>
+  <attributes>
+    <attribute readOnly="true">
+      <name>
+        State
+      </name>
+      <description>
+        Represents the sensor current state
+      </description>
+      <values type="onoff" />
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        valueTemperature
+      </name>
+      <description>
+        Represents the temperature in the room
+      </description>
+      <values type="numeric" />
+    </attribute>
+    <attribute readOnly="true">
+    <name>UnitIntensity</name>
+			<description>
+				This attribute represents the temperature measuring unit.
+				It is the abreviation of the UnitName.
+			</description>
+			<values type="string">
+				<value>C</value>
+			</values>
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        valueSetPoint
+      </name>
+      <description>
+        Represents the value of SetPoint control system
+      </description>
+      <values type="numeric" />
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        valueFanSpeed
+      </name>
+      <description>
+        put the speed you want
+      </description>
+      <values type="numeric" />
+    </attribute>
+        <attribute readOnly="true">
+    <name>StageFanSpeed</name>
+			<description>
+				This attribute represents the differents stage of fan speed.
+			</description>
+			<values type="string">
+					<value> min="210" max="255"->Stage Auto</value>
+					<value> min="190" max="209"->Stage 0</value>
+					<value> min="165" max="189"->Stage 1</value>
+					<value> min="145" max="164"->Stage 2</value>
+					<value> min="0" max="144"->Stage 3</value>
+			</values>
+    </attribute>
+    
+            <attribute readOnly="true">
+      <name>
+        valueDayNight
+      </name>
+      <description>
+        information on the day (on) or night (off)
+      </description>
+      <values type="onoff" />
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        valueOccupancy
+      </name>
+      <description>
+        Presence or not
+      </description>
+      <values type="onoff" />
+    </attribute>
+        <attribute readOnly="true">
+      <name>
+        valueWindow
+      </name>
+      <description>
+        information on the state of window (Open/close)
+      </description>
+      <values type="onoff" />
+    </attribute>
+
+<attribute readOnly="true">
+		Represents the temperature in the room.
+		  <name>
+        valueHumidity
+      </name>
+      <description>
+        Represents the humidity in the room.
+      </description>
+      <values type="numeric" />
+    </attribute>
+		<attribute readOnly="true">
+			<name>UnitHumidity</name>
+			<description>
+				This attribute represents the humidity measuring unit.
+				It is the abbreviation of the UnitName.
+			</description>
+			<values type="string">
+				<value>%</value>
+			</values>
+		</attribute>
