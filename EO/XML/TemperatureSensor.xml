@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+ <device>
+  <name>
+    Temperature sensor
+  </name>
+  <description>
+    This device measures the temperature in a room.     
+  </description>
+  <attributes>
+    <attribute readOnly="true">
+      <name>
+        State
+      </name>    
+      <description>
+        Represents the sensor current state
+      </description>
+      <values type="onoff" />
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        value
+      </name>
+      <description>
+        Represents the value of temperature
+      </description>
+      <values type="numeric" />
+    </attribute>               
+    <attribute readOnly="true">
+			<name>Unit</name>
+			<description>
+				This attribute represents the temperature measuring unit.
+				It is the abbreviation of the UnitName.
+			</description>
+			<values type="string">
+				<value>C</value>
+			</values>
+		</attribute>
+    <attribute readOnly="true">
+			<name>EventType</name>
+			<description>
+				This attribute represents if the sensor throws events
+				periodically (period) or on external event (event).
+			</description>
+			<values type="string">
+				<value>period</value>
+				<value>event</value>
+			</values>
+		</attribute>
+  </attributes>
+</device>
+

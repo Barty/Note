@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<device>
+  <name>
+    Rocker Switch, 4 Rocker
+  </name>
+  <description>
+    Blind control with 4 state
+  </description>
+  <attributes>
+    <attribute readOnly="true">
+      <name>
+        State
+      </name>
+      <description>
+        Represents the rocker state
+      </description>
+      <values type="onoff" />
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        Value
+      </name>
+      <description>
+        Represents the rocker value state
+      </description>
+      <values type="numeric" />
+    </attribute>
+    		<attribute readOnly="true">
+			<name>EventType</name>
+			<description>
+				This attribute represents if the sensor throws events
+				periodically (period) or on external event (event).
+			</description>
+			<values type="string">
+				<value>period</value>
+				<value>event</value>
+			</values>
+		</attribute>
+  </attributes>
+</device>
+
+
