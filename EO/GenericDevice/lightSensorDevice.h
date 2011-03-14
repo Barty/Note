@@ -1,5 +1,5 @@
-#ifndef __TEMPDEVICE_H
-#define __TEMPDEVICE_H
+#ifndef __LIGHTSENSORDEVICE_H
+#define __LIGHTSENSORDEVICE_H
 
 #include <string>
 #include <map>
@@ -9,14 +9,14 @@
 
 using namespace std;
 
-class tempDevice : public genericDevice {
+class lightSensorDevice : public genericDevice {
 
     public :
-        tempDevice();
+        lightSensorDevice();
         virtual int parse(Trame trame);
     
     protected:
         map<string, genericAttribute*> attributs;
     };
     
-#endif /* __TEMPDEVICE_H */
+#endif /* __LIGHTSENSORDEVICE_H */
