@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<device>
+  <name>
+    Window Contact
+  </name>
+  <description>
+    Information on the status of a window (Open/Closed)
+  </description>
+  <attributes>
+    <attribute readOnly="true">
+      <name>
+        State
+      </name>
+      <description>
+        Represents the contact current state
+      </description>
+      <values type="onoff" />
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        value
+      </name>
+      <description>
+        Represents the postion of the windows (Open/Closed)
+      </description>
+      <values type="onoff" />
+    </attribute>
+        <attribute readOnly="true">
+			<name>EventType</name>
+			<description>
+				This attribute represents if the sensor throws events
+				periodically (period) or on external event (event).
+			</description>
+			<values type="string">
+				<value>period</value>
+				<value>event</value>
+			</values>
+		</attribute>
+  </attributes>
+</device>
+
+

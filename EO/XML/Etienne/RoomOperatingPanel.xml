@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="windows-1250"?>
+
+<device>
+  <name>
+    Room Operating Panel
+  </name>
+  <description>
+    It is a set of sensors embedded in the same device   
+  </description>
+  <attributes>
+    <attribute readOnly="true">
+      <name>
+        State
+      </name>
+      <description>
+        Represents the sensor current state
+      </description>
+      <values type="onoff" />
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        valueTemperature
+      </name>
+      <description>
+        Represents the temperature in the room
+      </description>
+      <values type="numeric" />
+    </attribute>
+    <attribute readOnly="true">
+    <name>UnitIntensity</name>
+			<description>
+				This attribute represents the temperature measuring unit.
+				It is the abreviation of the UnitName.
+			</description>
+			<values type="string">
+				<value>C</value>
+			</values>
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        valueSetPoint
+      </name>
+      <description>
+        Represents the value of SetPoint control system
+      </description>
+      <values type="numeric" />
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        valueFanSpeed
+      </name>
+      <description>
+        put the speed you want
+      </description>
+      <values type="numeric" />
+    </attribute>
+        <attribute readOnly="true">
+    <name>StageFanSpeed</name>
+			<description>
+				This attribute represents the differents stage of fan speed.
+			</description>
+			<values type="string">
+					<value> min="210" max="255"->Stage Auto</value>
+					<value> min="190" max="209"->Stage 0</value>
+					<value> min="165" max="189"->Stage 1</value>
+					<value> min="145" max="164"->Stage 2</value>
+					<value> min="0" max="144"->Stage 3</value>
+			</values>
+    </attribute>
+    
+            <attribute readOnly="true">
+      <name>
+        valueDayNight
+      </name>
+      <description>
+        information on the day (on) or night (off)
+      </description>
+      <values type="onoff" />
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        valueOccupancy
+      </name>
+      <description>
+        Presence or not
+      </description>
+      <values type="onoff" />
+    </attribute>
+        <attribute readOnly="true">
+      <name>
+        valueWindow
+      </name>
+      <description>
+        information on the state of window (Open/close)
+      </description>
+      <values type="onoff" />
+    </attribute>
+
+<attribute readOnly="true">
+		Represents the temperature in the room.
+		  <name>
+        valueHumidity
+      </name>
+      <description>
+        Represents the humidity in the room.
+      </description>
+      <values type="numeric" />
+    </attribute>
+		<attribute readOnly="true">
+			<name>UnitHumidity</name>
+			<description>
+				This attribute represents the humidity measuring unit.
+				It is the abbreviation of the UnitName.
+			</description>
+			<values type="string">
+				<value>%</value>
+			</values>
+		</attribute>
+

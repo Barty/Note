@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="windows-1250"?>
+ 
+<device>
+  <name>
+    Occupancy Sensor
+  </name>
+  <description>
+    This device detect the presence of a person in the room    
+  </description>
+  <attributes>
+    <attribute readOnly="true">
+      <name>
+        State
+      </name>
+      <description>
+        Represents the sensor current state
+      </description>
+      <values type="onoff" />
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        value
+      </name>
+      <description>
+        Presence or not
+      </description>
+      <values type="onoff" />
+    </attribute>
+    <attribute readOnly="true">
+			<name>EventType</name>
+			<description>
+				This attribute represents if the sensor throws events
+				periodically (period) or on external event (event).
+			</description>
+			<values type="string">
+				<value>period</value>
+				<value>event</value>
+			</values>
+		</attribute>
+  </attributes>
+</device>
+

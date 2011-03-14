@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="windows-1250"?>
+ 
+<device>
+  <name>
+    Light Sensor
+  </name>
+  <description>
+     this devices measures the light intensity in the room 
+  </description>
+  <attributes>
+    <attribute readOnly="true">
+      <name>
+        State
+      </name>
+      <description>
+        Represents the sensor current state
+      </description>
+      <values type="onoff" />
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        value
+      </name>
+      <description>
+        Represents the light intensity
+      </description>
+      <values type="numeric" />
+    </attribute>
+    <attribute readOnly="true">
+    <name>Unit</name>
+			<description>
+				This attribute represents the light intensity measuring unit.
+				It is the abreviation of the UnitName.
+			</description>
+			<values type="string">
+				<value>lx</value>
+			</values>
+    </attribute>
+    <attribute readOnly="true">
+			<name>EventType</name>
+			<description>
+				This attribute represents if the sensor throws events
+				periodically (period) or on external event (event).
+			</description>
+			<values type="string">
+				<value>period</value>
+				<value>event</value>
+			</values>
+		</attribute>
+  </attributes>
+</device>
+

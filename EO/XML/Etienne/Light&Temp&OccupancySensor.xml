@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<device>
+  <name>
+    Light, Temperature and Occupancy Sensor
+  </name>
+  <description>
+    This device measure the light intensity and the temperature of the piece and detect the presence of a person in the room      
+  </description>
+  <attributes>
+    <attribute readOnly="true">
+      <name>
+        State
+      </name>
+      <description>
+        Represents the sensor current state
+      </description>
+      <values type="onoff" />
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        valueTemperature
+      </name>
+      <description>
+        Represents the temperature in the room.
+      </description>
+      <values type="numeric" />
+    </attribute>
+        <attribute readOnly="true">
+			<name>UnitTemperature</name>
+			<description>
+				This attribute represents the temperature measuring unit.
+				It is the abbreviation of the UnitName.
+			</description>
+			<values type="string">
+				<value>C</value>
+			</values>
+		</attribute>
+    <attribute readOnly="true">
+      <name>
+        valueIntensity
+      </name>
+      <description>
+        Represents the light intensity
+      </description>
+      <values type="numeric" />
+    </attribute>
+    <attribute readOnly="true">
+    <name>UnitIntensity</name>
+			<description>
+				This attribute represents the light intensity measuring unit.
+				It is the abreviation of the UnitName.
+			</description>
+			<values type="string">
+				<value>lx</value>
+			</values>
+    </attribute>
+    <attribute readOnly="true">
+      <name>
+        valueOccupancy
+      </name>
+      <description>
+        Presence or not
+      </description>
+      <values type="onoff" />
+    </attribute>
+    <attribute readOnly="true">
+			<name>EventType</name>
+			<description>
+				This attribute represents if the sensor throws events
+				periodically (period) or on external event (event).
+			</description>
+			<values type="string">
+				<value>period</value>
+				<value>event</value>
+			</values>
+		</attribute>
+  </attributes>
+</device>
+
