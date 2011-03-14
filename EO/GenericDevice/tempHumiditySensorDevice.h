@@ -1,5 +1,5 @@
-#ifndef __OCCUPANCYSENSORDEVICE_H
-#define __OCCUPANCYSENSORDEVICE_H
+#ifndef __TEMPHUMIDITYSENSORDEVICE_H
+#define __TEMPHUMIDITYSENSORDEVICE_H
 
 #include <string>
 #include <map>
@@ -9,14 +9,14 @@
 
 using namespace std;
 
-class occupancySensorDevice : public genericDevice {
+class tempHumiditySensorDevice : public genericDevice {
 
     public :
-        occupancySensorDevice();
+        tempHumiditySensorDevice();
         virtual int parse(Trame trame);
     
     protected:
         map<string, genericAttribute*> attributs;
     };
     
-#endif /* __OCCUPANCYSENSORDEVICE_H */
+#endif /* __TEMPHUMIDITYSENSORDEVICE_H */

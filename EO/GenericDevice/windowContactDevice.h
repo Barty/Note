@@ -1,5 +1,5 @@
-#ifndef __TEMPDEVICE_H
-#define __TEMPDEVICE_H
+#ifndef __WINDOWCONTACTDEVICE_H
+#define __WINDOWCONTACTDEVICE_H
 
 #include <string>
 #include <map>
@@ -9,14 +9,14 @@
 
 using namespace std;
 
-class tempDevice : public genericDevice {
+class windowContactDevice : public genericDevice {
 
     public :
-        tempDevice();
+        windowContactDevice();
         virtual int parse(Trame trame);
     
     protected:
         map<string, genericAttribute*> attributs;
     };
     
-#endif /* __TEMPDEVICE_H */
+#endif /* __WINDOWCONTACTDEVICE_H */

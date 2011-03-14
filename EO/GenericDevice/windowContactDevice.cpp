@@ -1,17 +1,16 @@
 
-#include "tempDevice.h"
+#include "windowContactDevice.h"
 #include "genericDevice.h"
 #include <string>
 
-    tempDevice::tempDevice()
+    windowContactDevice::windowContactDevice()
     {        
-        addAttribute("state");
+        addAttribute("State");
         addAttribute("value");
-        addAttribute("Unit");
         addAttribute("EventType");
     }
     
-    int tempDevice::parse(Trame trame)
+    int windowContactDevice::parse(Trame trame)
     {
       //TODO
       return 0;

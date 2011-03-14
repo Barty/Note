@@ -1,5 +1,5 @@
-#ifndef __OCCUPANCYSENSORDEVICE_H
-#define __OCCUPANCYSENSORDEVICE_H
+#ifndef __POSITIONSWITCHDEVICE_H
+#define __POSITIONSWITCHDEVICE_H
 
 #include <string>
 #include <map>
@@ -9,14 +9,14 @@
 
 using namespace std;
 
-class occupancySensorDevice : public genericDevice {
+class positionSwitchDevice : public genericDevice {
 
     public :
-        occupancySensorDevice();
+        positionSwitchDevice();
         virtual int parse(Trame trame);
     
     protected:
         map<string, genericAttribute*> attributs;
     };
     
-#endif /* __OCCUPANCYSENSORDEVICE_H */
+#endif /* __POSITIONSWITCHDEVICE_H */

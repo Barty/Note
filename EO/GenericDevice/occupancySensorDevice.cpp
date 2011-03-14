@@ -1,17 +1,16 @@
 
-#include "tempDevice.h"
+#include "occupancySensorDevice.h"
 #include "genericDevice.h"
 #include <string>
 
-    tempDevice::tempDevice()
+    occupancySensorDevice::occupancySensorDevice()
     {        
-        addAttribute("state");
-        addAttribute("value");
-        addAttribute("Unit");
+        addAttribute("State");
+        addAttribute("Value");
         addAttribute("EventType");
     }
     
-    int tempDevice::parse(Trame trame)
+    int occupancySensorDevice::parse(Trame trame)
     {
       //TODO
       return 0;

@@ -1,16 +1,16 @@
 
-#include "mechanicalHandleDevice.h"
+#include "positionSwitchDevice.h"
 #include "genericDevice.h"
 #include <string>
 
-    mechanicalHandleDevice::mechanicalHandleDevice()
+    positionSwitchDevice::positionSwitchDevice()
     {        
         addAttribute("State");
-        addAttribute("Value");
+        addAttribute("Position");
         addAttribute("EventType");
     }
     
-    int mechanicalHandleDevice::parse(Trame trame)
+    int positionSwitchDevice::parse(Trame trame)
     {
       //TODO
       return 0;

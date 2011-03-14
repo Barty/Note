@@ -1,17 +1,17 @@
 
-#include "tempDevice.h"
+#include "lightSensorDevice.h"
 #include "genericDevice.h"
 #include <string>
 
-    tempDevice::tempDevice()
+    lightSensorDevice::lightSensorDevice()
     {        
-        addAttribute("state");
-        addAttribute("value");
+        addAttribute("State");
+        addAttribute("Value");
         addAttribute("Unit");
         addAttribute("EventType");
     }
     
-    int tempDevice::parse(Trame trame)
+    int lightSensorDevice::parse(Trame trame)
     {
       //TODO
       return 0;
