@@ -2,15 +2,10 @@
 
 #include "genericAttribute.h"
 
-    genericAttribute::genericAttribute()
-    :readable(false)
+    genericAttribute::genericAttribute():readable(false)
     {
     }
     
-    /*genericAttribute::genericAttribute(string name, int refreshInterval)
-    :name(name), refreshInterval(refreshInterval)
-    {
-    }*/
 
     std::string genericAttribute::getValue()
     {

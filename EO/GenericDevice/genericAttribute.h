@@ -7,7 +7,7 @@ class genericAttribute {
 
     public:
         genericAttribute();
-        //genericAttribute(string name, int refreshInterval);
+        genericAttribute(std::string name);
 
         std::string getValue();
         void setValue(std::string value);
@@ -16,7 +16,7 @@ class genericAttribute {
 
     private:
 
-        //string name;
+        std::string name;
         //protected string description;
 
         std::string value;
