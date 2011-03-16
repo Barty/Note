@@ -14,12 +14,12 @@
         addAttribute("EventType");
     }
     
-    int tempDevice::parse((*trame)[32])
+    int tempDevice::parse(*char trame)
     {
-      bitset<4> DB0;
-      bitset<4> DB1;
-      bitset<4> DB2;
-      bitset<4> DB3;
+      bitset<8>(trame[0]) DB0;
+      bitset<8>(trame[1]) DB1;
+      bitset<8>(trame[2]) DB2;
+      bitset<8>(trame[3]) DB3;
       
       attributs["State"] = "ON";
       attributs["ValueVoltage"] = DB3*5.1/255;
