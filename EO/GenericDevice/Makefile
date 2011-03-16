@@ -1,7 +1,7 @@
 all: main
 
-main: main.o genericDevice.o genericAttribute.o 2RockerDevice.o
-	g++ main.o genericDevice.o genericAttribute.o 2RockerDevice.o -o test-deviceCache
+main: main.o genericDevice.o genericAttribute.o lightSensorDevice.o
+	g++ main.o genericDevice.o genericAttribute.o lightSensorDevice.o -o test-deviceCache
 
 main.o: main.cpp
 	g++ -c main.cpp
@@ -11,6 +11,9 @@ genericDevice.o: genericDevice.cpp genericDevice.h
 	
 genericAttribute.o: genericAttribute.cpp genericAttribute.h
 	g++ -c genericAttribute.cpp
+
+lightSensorDevice.o: lightSensorDevice.cpp lightSensorDevice.h
+	g++ -c lightSensorDevice.cpp
 
 2RockerDevice.o: 2RockerDevice.cpp 2RockerDevice.h
 	g++ -c 2RockerDevice.cpp

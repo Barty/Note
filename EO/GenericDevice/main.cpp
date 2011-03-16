@@ -1,6 +1,6 @@
 #include <iostream>
 #include "genericDevice.h"
-#include "tempDevice.h"
+#include "lightSensorDevice.h"
 
 using namespace std;
 
@@ -19,10 +19,14 @@ int main()
 
     cout << "//// Test - EnOcean Temperature Device ////" << endl;
 
-    tempDevice dev2;
-    Trame trame = {0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    lightSensorDevice dev2;
+    char trame[4] = {9,0,0,0};
+    //Trame trame = {0,0,0,0,0,0,0,0,0,0,0,0,0,0};
     
     cout << dev2.parse(trame) << endl;
+    cout << "State : " << dev2.getValue("State") << endl;
+    cout << "Voltage : " << dev2.getValue("ValueVoltage") << endl;
+    cout << "Illumination : " << dev2.getValue("ValueIllumination") << endl;
 
     return 0;
 }
