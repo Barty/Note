@@ -28,12 +28,14 @@ class genericDevice {
         virtual int parse(Trame trame);
     
         int getDeviceStatus();
+        
+        void setType( unsigned char type );
     
         //void toXML();
     
     protected:
         int id;
-        int type;
+        char type;
         map<string, genericAttribute*> attributs;
     };
     

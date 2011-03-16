@@ -41,6 +41,11 @@
         return -1;
     }
     
+    void genericDevice::setType(char type)
+    {
+        this.type = type;
+    }
+    
     int genericDevice::parse(Trame trame)
     {
         return -1;
