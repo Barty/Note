@@ -33,6 +33,7 @@ class genericDevice {
     
     protected:
         int id;
+        int type;
         map<string, genericAttribute*> attributs;
     };
     
