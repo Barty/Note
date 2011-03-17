@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="windows-1250"?>
-
+<?xml version="1.0" encoding="windows-1250"?> 
 <device>
   <name>
-    Temperature and Humidity Sensor  
+    Gas sensor
   </name>
   <description>
-    This device measures the temperature and the humidity in a room.        
+     this device used for measuring the concentration of gas in the area. 
   </description>
   <attributes>
     <attribute readOnly="true">
@@ -16,7 +15,42 @@
         Represents the sensor current state
       </description>
       <values type="onoff" />
+    </attribute>	
+
+    <attribute readOnly="true">
+      <name>
+        ValueConcentration
+      </name>
+      <description>
+        Represents the concentration
+      </description>
+      <values type="numeric" />
     </attribute>
+	
+    <attribute readOnly="true">
+    <name>UnitConcentration</name>
+		<description>
+			This attribute represents the concentration measuring unit.
+			It is the abreviation of the UnitName.
+		</description>
+		<values type="string">
+			<value>ppm</value>
+		</values>
+    </attribute>
+	
+    <attribute readOnly="true">
+			<name>EventType</name>
+			<description>
+				This attribute represents if the sensor throws events
+				periodically (period) or on external event (event).
+			</description>
+			<values type="string">
+				<value>period</value>
+				<value>event</value>
+			</values>
+		</attribute>
+  </attributes>  
+  
     <attribute readOnly="true">
       <name>
         valueTemperature
@@ -25,6 +59,7 @@
         Represents the temperature in the room.
       </description>
       <values type="numeric" />
+	  
     </attribute>
         <attribute readOnly="true">
 			<name>UnitTemperature</name>
@@ -44,6 +79,7 @@
         Represents the humidity in the room.
       </description>
       <values type="numeric" />
+	  
     </attribute>
 		<attribute readOnly="true">
 			<name>UnitHumidity</name>
@@ -55,16 +91,6 @@
 				<value>%</value>
 			</values>
 		</attribute>
-    <attribute readOnly="true">
-			<name>EventType</name>
-			<description>
-				This attribute represents if the sensor throws events
-				periodically (period) or on external event (event).
-			</description>
-			<values type="string">
-				<value>period</value>
-				<value>event</value>
-			</values>
-		</attribute>    
-  </attributes>
+
 </device>
+

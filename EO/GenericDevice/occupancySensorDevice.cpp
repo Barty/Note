@@ -3,28 +3,32 @@
 #include "genericDevice.h"
 #include <string>
 
-    occupancySensorDevice::occupancySensorDevice()
-    {        
-        addAttribute("State");
-        addAttribute("Value");
-        addAttribute("EventType");
-    }
-    
-    int occupancySensorDevice::parse(char * trame)
+occupancySensorDevice::occupancySensorDevice()
+{
+    addAttribute("State");
+    addAttribute("Value");
+    addAttribute("EventType");
+}
+
+int occupancySensorDevice::parse(Trame trame)
+{
+    char DB1 = trame[2];
+
+    this->setValue("State","ON");
+    //attributs["State"] = "ON";
+
+    switch (type)
     {
-      char DB1 = trame[2];
-      
-      attributs["State"] = "ON";
-      if (attributs["Type"] == "1")
-      {
+    case "1":
         if (DB1 < 127)
-          attributs["Value"].setValue("on");
+            attributs["Value"].setValue("on");
         if (DB1 > 127)
-          attributs["Value"].setValue("off");
-      }
-      else
-      {
+            attributs["Value"].setValue("off");
+    break;
+
+    default:
       ///// TODO ERROR ! /////
-      }
-      return 0;
+    break;
     }
+    return 0;
+}
